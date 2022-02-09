@@ -1,0 +1,173 @@
+.container {
+  padding: 0 4rem;
+  /* background-image: url("../public/assets/background.svg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slideContainer {
+  /* color: whitesmoke; */
+  max-width: 300px;
+}
+
+.slide {
+  border-radius: 20px;
+}
+.slide img {
+  max-width: 500px;
+  padding: 30px;
+}
+
+.main {
+  color: #212121;
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  border-radius: 100px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: dodgerblue;
+}
+
+.email {
+  color: dimgray;
+}
+
+.qrbox {
+  margin: 20px;
+}
+
+.qrbox:hover,
+.qrbox:focus,
+.qrbox:active {
+  transform: scale(1.5);
+}
+
+.footer {
+  color: #212121;
+  display: flex;
+  flex: 1;
+  padding: 1rem 0;
+  justify-content: center;
+  align-items: center;
+  text-align: c;
+}
+
+.title a {
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin-top: 10px;
+  /* line-height: 1.15; */
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 2rem 0;
+  font-size: 1.1rem;
+}
+
+.about {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  /* color: whitesmoke; */
+  text-align: center;
+}
+
+.code {
+  color: #0be881;
+  background: #1e272e;
+  border-radius: 5px;
+  padding: 0.3rem;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error {
+  pointer-events: none;
+  opacity: 0.6;
+  color: dimgray;
+}
+
+.card {
+  background: whitesmoke;
+  margin: 30px;
+  padding: 1.5rem;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+  max-width: 300px;
+  min-width: 240px;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  transform: scale(1.2);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: #535c68;
+  -moz-box-shadow: #535c68;
+  box-shadow: 0px 3px 30px 0px #1f1c2c;
+  animation: shake 0.4s;
+}
+
+.card h2 {
+  margin: 0 0 0;
+}
+
+.card p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.logo {
+  height: 1em;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+}
